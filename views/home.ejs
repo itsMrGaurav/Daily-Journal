@@ -5,8 +5,14 @@
 
 
 <h1>Hello</h1>
-<p> <%=content %> </p>
+<p> <%=topContent%> </p>
 
+<% contents.forEach(content => { %>
+
+	<h1><%=content.title%></h1>
+	<p> <%=content.body.slice(0, 100) + '...'%> <a href="/posts/<%=(content.title.toLowerCase()).replace(' ', '-')%>">Read More</a> </p>	
+
+<%})%>
 
 
 
