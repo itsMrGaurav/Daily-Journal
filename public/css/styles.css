@@ -1,3 +1,7 @@
+*:focus {
+    outline: 0 !important;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -34,6 +38,23 @@
   color: #fff;
 }
 
+.box {
+	position: sticky;
+	padding-top: 20px;
+}
+
+.post-btn {
+	background-color: transparent;
+	border: 1px solid #1abc9c;
+	color:  #1abc9c;
+}
+
+.post-btn:hover {
+	background-color: #1abc9c;
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 a {
 	color:  #333;
 }
@@ -42,3 +63,4 @@ a:hover {
 	text-decoration: underline;
 	color:  #333;
 }
+
