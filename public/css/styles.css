@@ -1,3 +1,6 @@
+
+/* universal */
+
 *:focus {
     outline: 0 !important;
 }
@@ -6,6 +9,13 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+p {
+	line-height: 1.5;
+}
+
+/* navbar */
+
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -19,6 +29,47 @@
     color: #1abc9c !important;
 }
 
+
+
+/* main-body section*/
+
+.main-body {
+	text-align: justify;
+}
+
+.hero-sec {
+	margin: 0 40px 0 10px;
+}
+
+.hero-sec > h1 {
+	text-align: center;
+	font-size: 5rem;
+	padding: 20px 0;
+}
+
+.posts-sec {
+	margin: 40px 30px 0 0;
+}
+
+.post {
+	background-color: #f8f8f8;
+	border: 1px solid #f8f8f8;
+	border-radius: 10px;
+	margin:  20px 0;
+	padding: 10px;
+}
+
+.post a {
+	color: #1abc9c;
+}
+
+.post a:hover{
+	color: #1abc9c;
+}
+
+
+/* main sidebar section*/
+
 .post-btn {
 	background-color: transparent;
 	border: 1px solid #1abc9c;
@@ -31,14 +82,33 @@
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.sidebar {
-	display: flex;
+.main-sidebar {
 	justify-content: center;
-	padding-top: 20px;
 }
 
-.articles {
-	text-align: justify;
+.btn-sec {
+	text-align: center;
+	padding-top: 40px;
+}
+
+.game-sec {
+	margin-top: 40px;
+	text-align: center;
+	background-color: #f8f8f8;
+	border: 1px solid #f8f8f8;
+	border-radius: 10px;
+	padding: 50px;
+}
+
+.game-sec > h1 {
+	font-size: 5rem;
+	width: 70%;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+.game-sec button {
+	margin-top: 40px ;
 }
 
 
@@ -52,6 +122,9 @@ a:hover {
 }
 
 
+
+
+/* footer-section */
 
 .footer-padding {
 	padding-bottom: 60px;
@@ -72,3 +145,26 @@ a:hover {
   color: #fff;
 }
 
+
+/* misc. by page*/
+
+/* about */
+
+.profile-img {
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+.profile-img > img {
+	width: 200px;
+	border: 1px solid #1abc9c;
+	border-radius: 50%;
+}
+
+.name {
+	margin: 20px 50px;
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: 'Sofia', cursive;
+}

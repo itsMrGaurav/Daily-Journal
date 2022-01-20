@@ -1,31 +1,25 @@
 <%- include("partials/header") %>
 
 
-<div class="row">
+<div class="row main">
 
-	<div class="col-lg-8 articles">
-		<div class="">	
-			<h1>Hello</h1>
+	<div class="col-lg-8 main-body">
+		<div class="hero-sec">	
+			<h1>Bonjour</h1>
 			<p> <%=topContent%> </p>
 		</div>
 
-		<div class="">
+		<div class="posts-sec">
 			<% contents.forEach(content => { %>
-				<div class="">	
+				<div class="post">	
 					<h1><%=content.title%></h1>
-					<p> <%=content.body.slice(0, 100) + '...'%> <a href="/posts/<%=(content.title.toLowerCase()).replace(' ', '-')%>">Read More</a> </p>
+					<p> <%=content.body.slice(0, 200) + '...'%> <a href="/posts/<%=(content.title.toLowerCase()).replace(' ', '-')%>">Read More</a> </p>
 				</div>
 			<%})%>
 		</div>
 	</div>
 
-
-	<div class="col-lg-4 sidebar">
-		<form action="/compose" method="get">
-			<input type="submit" class="btn btn-lg post-btn" value="+ New Post">
-		</form>		
-	</div>
-	
+	<%- include("partials/sidebar") %>	
 </div>
 
 

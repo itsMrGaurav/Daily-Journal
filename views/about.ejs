@@ -1,11 +1,19 @@
 <%- include("partials/header") %>
 
 
-
-
-
-<h1>About</h1>
-<p> <%=content %> </p>
+<div class="row">
+	<div class="col-lg-8 main-body">
+		<div class="hero-sec">	
+			<h1>About</h1>
+			<div class="profile-img">			
+				<img src="/profilephoto.jpeg" alt="profile-img">
+			</div>
+			<p class="name">“ Born from Kiran (Ma's name, means light in english) hence called Kiranay ”</p>
+			<p> <%=content%> </p>
+		</div>
+	</div>
+	<%- include("partials/sidebar") %>
+</div>
 
 
 

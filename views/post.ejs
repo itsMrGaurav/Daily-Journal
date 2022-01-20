@@ -1,14 +1,20 @@
 
+
 <%- include("partials/header") %>
 
 
-
-
-
-<h1> <%=content.title %> </h1>
-<p> <%=content.body %> </p>
+<div class="row">
+	<div class="col-lg-8 main-body">
+		<div class="hero-sec">	
+			<h1> <%=content.title %> </h1>
+			<p> <%=content.body %> </p>
+		</div>
+	</div>
+	<%- include("partials/sidebar") %>
+</div>
 
 
 
 
 <%- include("partials/footer") %>
+
