@@ -1,0 +1,33 @@
+<%- include("partials/header") %>
+
+
+<div class="row main">
+
+  <div class="col-lg-8 main-body">
+    <div class="hero-sec">  
+      <h1>Compose</h1>
+      <form action="/" method="post">
+        <div class="mb-3">
+          <label for="articleTitle" class="form-label">Title</label>
+          <input type="text" class="form-control" id="articleTitle" name="contentTitle" autocomplete="off" autofocus>  
+        </div>
+        <div class="mb-3">
+          <label for="articleContent" class="form-label">Post</label>
+          <textarea class="form-control" id="articleContent" rows="10" name="contentBody" placeholder="Write your thoughts here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top: 10px">Publish</button>
+      </form> 
+    </div>
+  </div>
+
+  <div class="col-lg-4 main-sidebar row">
+    <div class="game-sec col">
+      <h1>Wanna play a fun game?</h1>
+      <a href="https://itskiranay.github.io/simonGame/" target="blank">
+        <button class="btn btn-lg btn-info">Let's Go</button>
+      </a>
+    </div>
+  </div></div>
+ 
+
+<%- include("partials/footer") %>

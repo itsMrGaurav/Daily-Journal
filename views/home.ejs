@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+
+
+<div class="row main">
+
+	<div class="col-lg-8 main-body">
+		<div class="hero-sec">	
+			<h1>Bonjour</h1>
+			<p> <%=topContent%> </p>
+		</div>
+
+		<div class="posts-sec">
+			<% contents.forEach(content => { %>
+				<div class="post">	
+					<h1><%=content.title%></h1>
+					<p> <%=content.body.slice(0, 200) + '...'%> <a href="/posts/<%=(content.title.toLowerCase()).replace(' ', '-')%>">Read More</a> </p>
+				</div>
+			<%})%>
+		</div>
+	</div>
+
+	<%- include("partials/sidebar") %>	
+</div>
+
+
+
+<%- include("partials/footer") %>
